@@ -1,0 +1,91 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* FUNDO DA PAGINA */
+body {
+    background: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CORPO DA CALCULADORA */
+.calculadora {
+    background: #222;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 320px;
+}
+
+/* TELA */
+#display {
+    width: 100%;
+    height: 70px;
+    background: #000;
+    color: #0f0;
+    font-size: 32px;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+/* GRADE DOS BOTOES */
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* BOTOES */
+button {
+    height: 60px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #444;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* OPERADORES */
+.operador {
+    background: #7c3aed;
+}
+
+.operador:hover {
+    background: #6d28e0;
+}
+
+/* BOTAO IGUAL */
+.igual {
+    background: #00d26a;
+}
+
+/* BOTAO LIMPAR */
+.limpar {
+    background: #ff3b30;
+}
+
+/* BOTAO ZERO */
+.zero {
+    grid-column: span 2;
+}
